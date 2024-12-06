@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/assets/CSS/styles.css">
+    <link rel="stylesheet" href="/assets/CSS/form.css">
+</head>
+
+<body>
+
+    <div id="burger-menu">
+        <button id="menu-button">☰</button>
+        <nav id="menu-content" class="hidden">
+          <div id="auth-section">
+            <div id="auth-not-connected">
+              <a href="/pages/login.html"><button>Connexion</button></a>
+              <a href="/pages/register.html"><button>Inscription</button></a>
+            </div>
+            <div id="auth-connected" class="hidden">
+              <button id="logout-button">Déconnexion</button>
+            </div>
+          </div>
+          <hr>
+          <div id="menu-items">
+            <a href="/pages/index.html"><button>Accueil</button></a>
+            <button>Liste des parcours</button>
+            
+            
+          </div>
+        </nav>
+      </div>
+
+    <div class="form-container">
+        <h1>Inscription</h1>
+        <form id="registerForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <label for="password_confirmation">Confirmation du mot de passe :</label>
+            <input type="password" id="password_confirmation" name="password_confirmation" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p>Déjà un compte ? <a href="/pages/login.html">Connectez-vous ici</a>.</p>
+        <div id="message"></div>
+    </div>
+    <script src="/JS/index/auth.js"></script>
+    <script src="/JS/index/menu.js"></script>
+</body>
+</html>

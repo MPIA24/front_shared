@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of places</title>
+    
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/CSS/map.css">
+    <link href="/assets/CSS/styles.css" rel="stylesheet">
+  </head>
+
+  <div id="burger-menu">
+    <button id="menu-button">☰</button>
+    <nav id="menu-content" class="hidden">
+      <div id="auth-section">
+        <div id="auth-not-connected">
+          <a href="/pages/login.html"><button>Connexion</button></a>
+          <a href="/pages/register.html"><button>Inscription</button></a>
+        </div>
+        <div id="auth-connected" class="hidden">
+          <button id="logout-button">Déconnexion</button>
+        </div>
+      </div>
+      <hr>
+      <div id="menu-items">
+        <a href="../index.html"><button>Landing</button></a>
+        <a href="/pages/map.html"><button>Liste des POI</button></a>
+        <a href="/pages/tours.html"><button>Liste des parcours</button></a>
+        
+        
+      </div>
+    </nav>
+  </div>
+  <body>
+    <div id="map"></div>
+    <div id="features">
+  </div> 
+  <script src="/JS/index/app.js"></script>
+  <script src="/JS/index/auth.js"></script>
+  <script src="/JS/index/menu.js"></script>
+  </body>
+</html>

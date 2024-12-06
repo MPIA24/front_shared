@@ -1,0 +1,43 @@
+
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+#map {
+
+    position: fixed;
+    width: 100%;
+    @media screen and (min-width: 1080px) {
+        width : 50%; /* Visible uniquement pour les écrans de plus de 1080px */
+    }
+}
+#features {
+    display: none; /* Caché par défaut */
+
+    @media screen and (min-width: 1080px) {
+        display: block; /* Visible uniquement pour les écrans de plus de 1080px */
+    }
+    width: 50%;
+    margin-left: 50%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: white;
+}
+section {
+    opacity: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+}
+section.active {
+    opacity: 1;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+.popupText{
+    max-height : 250px;
+    overflow: scroll;
+}

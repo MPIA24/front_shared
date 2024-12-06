@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8e2;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#google-map {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.event, .badge {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#map-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Burger menu */
+  #burger-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  
+  #menu-button {
+    background-color: white;
+    color: rgb(44, 43, 43);
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: #333 2px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #menu-content {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #menu-content button {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  #menu-content button:hover {
+    background: #eaeaea;
+  }
+  
+  hr {
+    margin: 10px 0;
+  }
+
+  .legend-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.legend-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.legend-locomotion {
+    margin-bottom: 5px;
+}
+
+.legend-poi-list {
+    margin-bottom: 5px;
+}
+

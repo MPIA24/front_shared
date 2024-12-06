@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="/assets/CSS/form.css">
+    <link rel="stylesheet" href="/assets/CSS/styles.css">
+</head>
+
+<body>
+  <div id="burger-menu">
+    <button id="menu-button">☰</button>
+    <nav id="menu-content" class="hidden">
+      <div id="auth-section">
+        <div id="auth-not-connected">
+          <a href="/pages/login.html"><button>Connexion</button></a>
+          <a href="/pages/register.html"><button>Inscription</button></a>
+        </div>
+        <div id="auth-connected" class="hidden">
+          <button id="logout-button">Déconnexion</button>
+        </div>
+      </div>
+      <hr>
+      <div id="menu-items">
+        <a href="../index.html"><button>Landing</button></a>
+        <a href="/pages/map.html"><button>Liste des POI</button></a>
+        <a href="/pages/tours.html"><button>Liste des parcours</button></a>
+        
+        
+      </div>
+    </nav>
+  </div>
+    <div class="form-container">
+        <h1>Connexion</h1>
+        <form id="loginForm">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore de compte ? <a href="/pages/register.html">Inscrivez-vous ici</a>.</p>
+        <div id="message"></div>
+    </div>
+    <script src="/JS/index/auth.js"></script>
+    <script src="/JS/index/menu.js"></script>
+</body>
+</html>
