@@ -129,9 +129,11 @@ function createBuildingDescription(batiment) {
 
     const h3 = document.createElement('h3');
     h3.textContent = batiment.name;
+    h3.classList.add('buildingName');
 
     const p = document.createElement('p');
     p.textContent = batiment.description;
+    p.classList.add('buildingDescription');
 
     // Ajouter les éléments créés dans la section
     section.appendChild(h3);
