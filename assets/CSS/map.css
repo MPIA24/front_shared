@@ -37,4 +37,5 @@ section {
 .buildingDescription{
     max-height : 100px;
     color: var(--noir);
+    overflow-y: scroll;
 }
