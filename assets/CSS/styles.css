@@ -149,3 +149,13 @@ footer {
     color : green
 }
 
+.toggleDisplay{
+  display: none;
+}
+
+.Model{
+  width : 600px;
+  height : 300px;
+  background-color: black;
+  size: 120%;
+}
