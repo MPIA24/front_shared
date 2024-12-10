@@ -9,7 +9,7 @@
     --vert: #4c956c;
 }
 
-body{
+body, h3, h2{
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
@@ -44,4 +44,14 @@ body{
   
   .btn-rg:hover {
     background-color: #895d4f;
+  }
+
+  h2 {
+    color: var(--noir);
+    font-size: 1.5rem;
+  }
+  
+  h3{
+    color: var(--noir);
+    font-size: 2rem;
   }

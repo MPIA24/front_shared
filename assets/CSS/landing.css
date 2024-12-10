@@ -1,14 +1,3 @@
-:root {
-  --noir: #2e282a;
-  --gris: #979495;
-  --blanc: #FFFFEA;
-  --violet: #7d82b8;
-  --orange: #cd8b76;
-  --vert: #4c956c;
-  --bgclaire: rgb(46 40 42 / .02);
-}
-
-
 /* Global styles */
 
 body {
@@ -24,11 +13,6 @@ h1 {
 h2 {
   color: var(--noir);
   font-size: 3rem;
-}
-
-h3{
-  color: var(--noir);
-  font-size: 2rem;
 }
 
 h4{
