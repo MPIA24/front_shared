@@ -10,6 +10,7 @@
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/CSS/map.css">
     <link href="/assets/CSS/styles.css" rel="stylesheet">
+    <link href="/assets/CSS/composants.css" rel="stylesheet">
   </head>
 
   <div id="burger-menu">
@@ -42,20 +43,20 @@
             <div class="textContainer">
               <h3 class="buildingName">Chapelle de la miséricorde</h3>
               <p class="buildingDescription">La Chapelle de la miséricorde à Caen, édifiée au XVIIe siècle, est un exemple sobre de style baroque. Anciennement rattachée au couvent des soeurs Miséricorde. Elle se distingue par sa façade classique et son intérieur intime, propice à la prière. Aujourd'hui elle constitue un patrimoine culturel notable de la ville de Caen </p>
-              <button id="toggle3D">en savoir plus</button>
+              <button id="toggle3D" class="btn">En savoir plus →</button>
               <div class="toggleDisplay" id="toggleDiv">
                 <div class="buildingStoryList">
-                  <p class="buildingStoryItem"> 24 avril 1956 : inauguration de la nouvelle clinique de la Miséricorde </p>
-                  <p class="buildingStoryItem"> 26 mai 1958 : inauguration de la nouvelle chapelle de la Miséricorde </p>
-                  <p class="buildingStoryItem"> 15 avril 1951 : pose de la première pierre de la chapelle de la Miséricorde / mise en service du relais Paris-inter</p>
-                  <p class="buildingStoryItem"> 1 octobre 1992 : inauguration du nouveau bâtiment de la clinique de la Miséricorde</p>
-                  <p class="buildingStoryItem"> 21 décembre 2001 : fermeture de la maternité de la Miséricorde et début des travaux de la nouvelle clinique</p>
-                  <p class="buildingStoryItem"> 9 septembre 2002 : une partie du mur d'enceinte de la clinique de la Miséricorde s'effondre</p>
-                  <p class="buildingStoryItem"> 19 septembre 2006 : inauguration des extensions de la clinique de la Miséricorde</p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">24 avril 1956</span> : inauguration de la nouvelle clinique de la Miséricorde </p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">26 mai 1958</span> : inauguration de la nouvelle chapelle de la Miséricorde </p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">15 avril 1951</span> : pose de la première pierre de la chapelle de la Miséricorde / mise en service du relais Paris-inter</p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">1 octobre 1992</span> : inauguration du nouveau bâtiment de la clinique de la Miséricorde</p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">21 décembre 2001</span> : fermeture de la maternité de la Miséricorde et début des travaux de la nouvelle clinique</p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">9 septembre 2002</span> : une partie du mur d'enceinte de la clinique de la Miséricorde s'effondre</p>
+                  <p class="buildingStoryItem"> <span class="StoryDate">19 septembre 2006</span> : inauguration des extensions de la clinique de la Miséricorde</p>
                 </div>     
               <div class="3Dcontainer">
                 <h2 class="3DModelTitle"> La chapelle de la Miséricorde en 1936</h2>
-                <model-viewer src="/assets/3Dmodels/la_chapelle_de_la_misericorde.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" class ="Model"> </model-viewer>
+                <model-viewer src="/assets/3Dmodels/la_chapelle_de_la_misericorde.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="1" camera-orbit="-33.97deg 73.59deg 150m" field-of-view="21.36deg" environment-image="legacy" class="Model"> </model-viewer>
                 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
               </div>
             </div>

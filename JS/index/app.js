@@ -131,6 +131,9 @@ function createBuildingDescription(batiment) {
     const section = document.createElement('section');
     section.id = batiment.id;
 
+    const img = document.createElement('img');
+    img.classList.add('buildingImage');
+
     const h3 = document.createElement('h3');
     h3.textContent = batiment.name;
     h3.classList.add('buildingName');

@@ -1,5 +1,4 @@
-
-body { margin: 0; padding: 0; }
+body { margin: 0; padding: 0; background-color: white;}
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
 #map {
@@ -37,11 +36,5 @@ section {
 
 .buildingDescription{
     max-height : 100px;
-    overflow: scroll;
-    color : red;
-}
-
-.buildingName{
-    font-weight: bold;
-    background-color: aqua;
+    color: var(--noir);
 }
