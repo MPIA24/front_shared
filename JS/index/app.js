@@ -1,5 +1,9 @@
 maptilersdk.config.apiKey = 'IOB0c3pObw5n5M6qkQcE';
-
+let toggle3D = document.getElementById('toggle3D');
+toggle3D.addEventListener('click', function(){
+    let toggleDiv= document.getElementById('toggleDiv')
+    toggleDiv.classList.toggle('toggleDisplay')
+})
 async function fetchAllPoi() {
     try {
         const response = await fetch('http://localhost:8000/api/batiments', {
@@ -190,8 +194,8 @@ async function populateBuildingDescriptions() {
 var map = new maptilersdk.Map({
     container: 'map',
     style: maptilersdk.MapStyle.STREETS,
-    center: [-0.38, 49.17],
-    zoom: 10,
+    center: [-0.3706, 49.1828],
+    zoom: 14,
 });
 const userId = getUserIdFromCookie();
 // Initialisation de la map et des interactions
