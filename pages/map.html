@@ -37,7 +37,31 @@
   <body>
     <div id="map"></div>
     <div id="features">
-  </div> 
+        <section id="batimentid">
+          <div class="3DAnimContainer">
+            <div class="textContainer">
+              <h3 class="buildingName">Chapelle de la miséricorde</h3>
+              <p class="buildingDescription">La Chapelle de la miséricorde à Caen, édifiée au XVIIe siècle, est un exemple sobre de style baroque. Anciennement rattachée au couvent des soeurs Miséricorde. Elle se distingue par sa façade classique et son intérieur intime, propice à la prière. Aujourd'hui elle constitue un patrimoine culturel notable de la ville de Caen </p>
+              <button id="toggle3D">en savoir plus</button>
+              <div class="toggleDisplay" id="toggleDiv">
+                <div class="buildingStoryList">
+                  <p class="buildingStoryItem"> 24 avril 1956 : inauguration de la nouvelle clinique de la Miséricorde </p>
+                  <p class="buildingStoryItem"> 26 mai 1958 : inauguration de la nouvelle chapelle de la Miséricorde </p>
+                  <p class="buildingStoryItem"> 15 avril 1951 : pose de la première pierre de la chapelle de la Miséricorde / mise en service du relais Paris-inter</p>
+                  <p class="buildingStoryItem"> 1 octobre 1992 : inauguration du nouveau bâtiment de la clinique de la Miséricorde</p>
+                  <p class="buildingStoryItem"> 21 décembre 2001 : fermeture de la maternité de la Miséricorde et début des travaux de la nouvelle clinique</p>
+                  <p class="buildingStoryItem"> 9 septembre 2002 : une partie du mur d'enceinte de la clinique de la Miséricorde s'effondre</p>
+                  <p class="buildingStoryItem"> 19 septembre 2006 : inauguration des extensions de la clinique de la Miséricorde</p>
+                </div>     
+              <div class="3Dcontainer">
+                <h2 class="3DModelTitle"> La chapelle de la Miséricorde en 1936</h2>
+                <model-viewer src="/assets/3Dmodels/la_chapelle_de_la_misericorde (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" class ="Model"> </model-viewer>
+                <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div> 
   <script src="/JS/index/app.js"></script>
   <script src="/JS/index/auth.js"></script>
   <script src="/JS/index/menu.js"></script>
