@@ -15,6 +15,7 @@ body, h3, h2{
 
 .btn {
     display: inline-block;
+    text-align: center;
     background-color: #4c956c;
     border: 0;
     color: #fff;
@@ -32,10 +33,11 @@ body, h3, h2{
   
   .btn-rg {
       display: inline-block;
+      text-align: center;
       background-color: #cd8b76;
       color: #fff;
       text-decoration: none;
-      padding: 1rem 2rem;
+      padding: 0.5rem 1rem;
       border-radius: 10px;
       font-size: 1rem;
       font-weight: bold;

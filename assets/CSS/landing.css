@@ -7,7 +7,7 @@ body {
 
 h1 {
   color: var(--noir);
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -51,6 +51,17 @@ nav a {
   text-decoration: none;
 }
 
+.desktopAnchor{
+  display: none;
+}
+
+@media (min-width: 768px){
+  .desktopAnchor{
+    display: flex;
+  }
+}
+
+
 /* Hero section */
 
 .hero {
@@ -64,6 +75,7 @@ nav a {
 .BG {
     background-image: url(../img/maria-c6F20K4r6-w-unsplash.png);
     background-size: cover;
+    height: 760px;
 }
 
 .hero-content {
@@ -71,7 +83,7 @@ nav a {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: var(--noir);
@@ -86,17 +98,28 @@ nav a {
   max-width: 100%;
   height: auto;
   top: auto;
+  display: none;
+}
+
+@media (min-width: 768px){
+  .hero h1 {
+    font-size : 4rem;
+  }
+  .hero-image img {
+    display : block
+  }
 }
 
 /* Projet styles */
 .projet{
-  padding: 4rem;
-  background-image: url(assets/img/S_vert.svg);
+  padding: 2rem;
+  background-image: url(../img/S_vert.svg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
-
 }
+
+
 
 .projet h2{
   text-align: center;
@@ -107,7 +130,7 @@ nav a {
 }
 
 .projet p{
-  text-align: center;
+  text-align: justify;
   margin-bottom: 5rem;
 }
 
@@ -116,10 +139,25 @@ nav a {
   margin: auto;
 }
 
+.dbImg{
+  width : 20rem;
+}
+
+
 /* Features styles */
 .features {
   padding: 4rem;
 }
+
+@media (min-width: 768px) {
+  .projet{
+    padding : 4rem;
+  }
+  .dbImg{
+    width : 32rem;
+  }
+}
+
 
 .features h2{
   text-align: center;
@@ -151,19 +189,27 @@ nav a {
 
 /* Grid styles */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
 
 }
 
 .grid > div {
 
-  padding: 20px;
+  width : 7.5rem;
+  padding: 1rem;
   border-radius: 8px;
   text-align: center;
   
+}
+
+@media (min-width: 768px) {
+  .grid > div {
+    width : 12rem;
+    padding: 2rem;
+  }
+
 }
 
 .grid h3 {
@@ -208,12 +254,18 @@ nav a {
 }
 
 /* Avantage styles */
+
+.avantages {
+  display : flex;
+  flex-direction: column;
+}
 .bloc{
   display: flex;
   gap: 5em;
-  flex-direction: row;
-  padding: 3rem;
+  flex-direction: column-reverse;
 }
+
+
 
 .gauche{
   display: flex;
@@ -236,6 +288,25 @@ nav a {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--violet);
+}
+.droite {
+  display : flex;
+  justify-content: center;
+}
+.droite img{
+  width : 300px;
+  height: auto;
+}
+
+@media (min-width: 768px){
+  .bloc{
+    flex-direction: row;
+    padding : 3rem;
+  }
+  .droite img {
+    width : auto;
+    height : 600px;
+  }
 }
 
 /* Carto styles */
@@ -439,7 +510,7 @@ nav a {
   padding-top: 4rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  background-image: url(assets/img/S_noir.svg);
+  background-image: url(../img/S_noir.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
