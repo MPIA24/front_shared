@@ -88,12 +88,14 @@
             height: auto;
             /* Hauteur automatique pour conserver les proportions */
         }
+
         .navbar-tools {
             display: flex;
             align-items: center;
             border: 1px solid black;
-            
+
         }
+
         .navbar-tools i {
             margin-left: 15px;
             font-size: 1.2rem;
@@ -103,13 +105,20 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-white-shadow">
                 <div class="container-fluid">
                     <!-- logo -->
-                    <a href="/../index.html"><img src="/assets/img/logo.png" alt="App Logo" class="logo"></a>
+                    <a href="../index.html"> <img src="../assets/img/logo.png" alt="App Logo" class="logo"> </a>
+
+                    <form class="form-inline mx-auto">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+
                     <div class="navbar-tools ms-auto">
                         <i class="fas fa-tools"></i>
                         <i class="fas fa-user"></i>
@@ -120,7 +129,7 @@
             <nav class="col-md-2 d-none d-md-block bg-light sidebar py-3">
                 <div class="position-sticky">
                     <!-- Logo -->
-                    <img src="/assets/img/normandie.png" alt="Normandie Logo" class="logo">
+                    <img src="../assets/img/normandie.png" alt="Normandie Logo" class="logo">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="#dashboard">Accueil</a>
@@ -276,7 +285,7 @@
                 <footer class="text-center my-4">
                     <h5>Ils soutiennent notre vision</h5>
                     <div class="d-flex justify-content-center flex-wrap">
-                        <img src="/assets/img/Sponsors.png" alt="Partenaire 1" class="mx-2 my-1 img-fluid">
+                        <img src="../assets/img/Sponsors.png" alt="Partenaire 1" class="mx-2 my-1 img-fluid">
                     </div>
                 </footer>
             </main>
