@@ -4,7 +4,7 @@ document.getElementById('loginForm')?.addEventListener('submit', async (event) =
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 //creating fetch request
-    const response = await fetch('http://localhost:8000/api/login', {
+    const response = await fetch('http://cestpasunvirus.fr:8001/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -35,7 +35,7 @@ document.getElementById('registerForm')?.addEventListener('submit', async (event
     const password = document.getElementById('password').value;
     const password_confirmation = document.getElementById('password_confirmation').value;
 // creating fetch request
-    const response = await fetch('http://localhost:8000/api/register', {
+    const response = await fetch('http://cestpasunvirus.fr:8001/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password, password_confirmation })

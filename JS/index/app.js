@@ -6,7 +6,7 @@ toggle3D.addEventListener('click', function(){
 })
 async function fetchAllPoi() {
     try {
-        const response = await fetch('http://localhost:8000/api/batiments', {
+        const response = await fetch('http://cestpasunvirus.fr:8001/api/batiments', {
             method: 'GET',
             headers: {
                 'Origin': 'http://127.0.0.1:5500',
@@ -27,7 +27,7 @@ async function fetchVisitedPOI() {
         return []; // Tableau vide si l'utilisateur n'est pas connecté
     }
     try {
-        const response = await fetch('http://localhost:8000/api/visited/get', {
+        const response = await fetch('http://cestpasunvirus.fr:8001/api/visited/get', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', // Indique que le body est JSON
@@ -51,7 +51,7 @@ async function fetchVisitedPOI() {
 
 async function postVisit(batiment_id, user_id){
     try {
-        const response = await fetch('http://localhost:8000/api/visited', {
+        const response = await fetch('http://cestpasunvirus.fr:8001/api/visited', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

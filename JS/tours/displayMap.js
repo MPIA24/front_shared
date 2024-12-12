@@ -50,7 +50,7 @@ function decodePolyline(encoded) {
 // fetching all tours from API
 async function fetchTours() {
     try {
-        const response = await fetch('http://localhost:8000/api/tours', {
+        const response = await fetch('http://cestpasunvirus.fr:8001/api/tours', {
             method: 'GET',
             headers: {
                 'Origin': 'http://127.0.0.1:5500',
