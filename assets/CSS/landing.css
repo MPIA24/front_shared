@@ -273,7 +273,6 @@ nav a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2em;
   width: auto;
 }
 
@@ -312,16 +311,16 @@ nav a {
 /* Carto styles */
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem;
   background-color: var(--bgclaire);
   border-radius: 20px;
   }
 
   .map-container {
   position: relative;
-  width: 50%;
+  width: 80%;
   height: 400px;
   }
 
@@ -332,7 +331,7 @@ nav a {
   }
 
   .description {
-  width: 50%;
+  width: 80%;
   padding-left: 2rem;
   padding-right: 2rem;
   }
@@ -355,16 +354,28 @@ nav a {
     background-color: #336348;
   }
 
+  @media (min-width: 768px) {
+    .container{
+      flex-direction: row;
+      margin: 4rem;
+    }
+    .container.map-container {
+      width: 50%;
+    }
+    .container.description {
+      width: 50%;
+    }
+  }
+
   /* Parcours styles */
   .park h2{
     text-align: center;
-    padding: 3rem;
     margin-bottom: 0px;
   }
   .parcours {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   padding: 4rem;
   }
 
@@ -373,6 +384,16 @@ nav a {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width : 24rem;
+  }
+
+  @media (min-width: 768px){
+    .parcours {
+      gap: 3rem;
+    }
+   .feature-card {
+    width : 22%;
+   }
   }
 
   .feature-image {
@@ -397,14 +418,20 @@ nav a {
   /* Gamification styles */
 
   .gamification {
-    padding: 4rem;
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .gamification {
+      padding: 4rem;
+    }
   }
 
   .gamification h2 {
     text-align: center;
   }
 
-  .gamification p {
+  .gamification p{
     text-align: center;
   }
 
@@ -414,19 +441,19 @@ nav a {
 
   /* Access styles */
   .access {
-    padding: 4rem;
+    padding: 1rem;
   }
 
   .container-access {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    }
+  }
   
     .map-container-access {
-    position: relative;
-    width: 50%;
+      position: relative;
     }
   
     .map-image-access {
@@ -435,14 +462,24 @@ nav a {
     }
   
     .description-access {
-    width: 50%;
-    padding-left: 3rem;
-    padding-right: 2rem;
+      padding: 1rem;
     }
+
+  @media (min-width: 768px) {
+    .container-access {
+      flex-direction: row;
+    }
+    .container-access.map-container-access {
+      width: 50%;
+    }
+    .access{
+      padding: 4rem;
+    }
+  }
 
   /* IA styles */
   .intel {
-    padding: 4rem;
+    padding: 1rem;
   }
 
   .intel a.btn {
@@ -451,6 +488,7 @@ nav a {
 
   .container-intel {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -459,7 +497,7 @@ nav a {
   
     .map-container-intel {
     position: relative;
-    width: 50%;
+    width: 80%;
     }
   
     .map-image-intel {
@@ -468,21 +506,46 @@ nav a {
     }
   
     .description-intel {
-    width: 50%;
-    padding-left: 3rem;
-    padding-right: 2rem;
+      padding : 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .data {
       display: flex;
-      padding: 3rem;
-      gap: 2rem;
+      flex-direction: column;
+
     }
 
     .cinquantepc {
       display: flex;
-      width: 50%;
       gap: 1rem;
+    }
+
+    @media (min-width: 768px){
+      .intel{
+        padding: 4rem;
+      }
+      .container-intel{
+        flex-direction: row;
+      }
+      .map-container-intel{
+        width: 50%;
+      }
+      .description-intel{
+      width: 50%;
+      padding-left: 3rem;
+      padding-right: 2rem;
+      display: block;
+      }
+      .data{
+        flex-direction: row;
+        padding: 3rem;
+        gap: 2rem;
+      }
+     
     }
 
   /* sponso styles */
@@ -492,7 +555,9 @@ nav a {
 
   .sponso-img {
     display: flex;
+    overflow-y: scroll;
     justify-content: space-evenly;
+    gap : 2rem;
     align-items: center;
     padding: 3rem;
   }
@@ -517,7 +582,7 @@ nav a {
 }
 
 .cont-gauche {
-  flex: 1;
+  display : none;
 }
 
 .cont-gauche img {
@@ -545,11 +610,12 @@ nav a {
 .download {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
   background-color: var(--noir);
   padding: 1rem;
   border-radius: 10px;
-  width: 30%;
+  width : 70%;
 }
 
 .download img {
@@ -583,6 +649,16 @@ nav a {
   background-image: linear-gradient(to top, #cd8b76, #fff);
 }
 
+@media (min-width: 768px) {
+  .cont-gauche{
+    display : block;
+    flex : 1
+  }
+  .download{
+    width : 30%;
+  }
+}
+
 /* team styles */
 .team img {
   width: 100%;
@@ -594,8 +670,9 @@ nav a {
 }
 
 .team p {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 8rem;
+  padding : 1rem;
 
 }
 
@@ -604,21 +681,23 @@ nav a {
 footer {
   background-color: var(--noir);
   color: #fff;
-  padding: 4rem;
+  padding: 1rem;
   border-top: solid #cd8b76 5px;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 2rem;
+  gap: 2rem;
 }
 
 .footer-content span {
-  font-size: 14px;
+  font-size: 12x;
 }
 
 .footer-content nav ul {
@@ -645,4 +724,20 @@ footer {
 .center {
   text-align: center;
   padding-top: 2rem;
+}
+
+.githubLogo{
+  display : none;
+}
+
+@media (min-width: 768px) {
+  .githubLogo{
+    display: block;
+  }
+  footer{
+    padding: 4rem;
+  }
+  .footer-content{
+    justify-content: space-around;
+  }
 }
